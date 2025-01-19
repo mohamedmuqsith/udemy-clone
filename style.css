@@ -9,6 +9,10 @@
     padding: 10px;
     gap: 10px;
     border-bottom: solid 1px black;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 .header-section__h1 h1{
     color: blueviolet;
@@ -23,6 +27,7 @@
 .header-section__h2 input{
  border: none;
  width: 60%;
+ background-color: transparent;
 }
 .header-section__h2 input:focus{
     outline: none;
@@ -33,12 +38,31 @@
     gap: 10px;
     align-items: center;
 }
+/*My learning popup*/
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid 1px black;
+    width: 100%;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
 .categories{
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     justify-content: space-between;
     border-bottom: solid black 1px;
+    
 }
 .categories p{
     background-color: blueviolet;
@@ -46,9 +70,22 @@
     padding: 15px;
     border-radius: 30px;
 }
+.sales-image {
+    position: relative;
+}
 .sales-image img{
     width: 100%;
 }
+.sales-image__offer{
+    background-color: rgb(238, 242, 242);
+   border: 1px solid black;
+   width: 35%;
+   padding: 2%;
+   position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
 .recommended{
     padding: 10px;
 }
