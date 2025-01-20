@@ -62,6 +62,7 @@
     padding: 10px;
     justify-content: space-between;
     border-bottom: solid black 1px;
+   
     
 }
 .categories p{
@@ -84,6 +85,14 @@
    position: absolute;
   top: 10%;
   left: 10%;
+  transition: 5s;
+}
+.sales-image__offer:hover{
+    transition: 5s;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transform: scaleX(0.9);
 }
 
 .recommended{
