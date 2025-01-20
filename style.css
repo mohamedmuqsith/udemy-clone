@@ -70,6 +70,14 @@
     color: white;
     padding: 15px;
     border-radius: 30px;
+    border: solid 1px blueviolet;
+}
+.categories p:hover{
+    background-color: transparent;
+    transition: 1s;
+    color: blueviolet;
+    cursor: pointer;
+    border: solid 1px blueviolet;
 }
 .sales-image {
     position: relative;
@@ -85,16 +93,18 @@
    position: absolute;
   top: 10%;
   left: 10%;
-  transition: 5s;
+  animation-name: zoom;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
-.sales-image__offer:hover{
-    transition: 5s;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  transform: scaleX(0.9);
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
 }
-
 .recommended{
     padding: 10px;
 }
